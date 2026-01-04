@@ -1,16 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
 import { getDatabase, ref, push, onValue, remove, update } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
-
-// Firebase 설정 적용
-const firebaseConfig = {
-    apiKey: "AIzaSyCcPIYzj6xpPmf8O-9_h68dQesvmrxAg-A",
-    authDomain: "vibe-coding-todo-6d7d4.firebaseapp.com",
-    databaseURL: "https://vibe-coding-todo-6d7d4-default-rtdb.firebaseio.com",
-    projectId: "vibe-coding-todo-6d7d4",
-    storageBucket: "vibe-coding-todo-6d7d4.firebasestorage.app",
-    messagingSenderId: "673675195392",
-    appId: "1:673675195392:web:7b86c134e8181d04ab54e5"
-};
+import { firebaseConfig } from './config.js';
 
 // Firebase 초기화
 const app = initializeApp(firebaseConfig);
