@@ -24,6 +24,16 @@
 * **완료 체크 기능**: 완료된 항목을 시각적으로 구분하여 관리할 수 있습니다.
 * **반응형 디자인**: 모바일과 데스크탑 환경 모두에서 사용하기 편리한 UI를 제공합니다.
 
+## 🚀 배포 (Deployment) - Vercel
+
+이 프로젝트는 Vercel을 통해 배포됩니다. 보안을 위해 Firebase 설정값은 환경 변수(`Environment Variables`)로 관리합니다.
+
+### 환경 변수 설정
+Vercel 프로젝트 설정에서 다음 변수들을 추가해야 합니다:
+* `FIREBASE_API_KEY`, `FIREBASE_AUTH_DOMAIN`, `FIREBASE_DATABASE_URL` 등
+
+빌드 시 `node generate-config.js` 명령어가 실행되어 `config.js` 파일을 자동으로 생성합니다.
+
 ## 👤 제작자
 
 * **이름**: bumjoo
